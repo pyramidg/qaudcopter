@@ -1,0 +1,72 @@
+
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+html {  height: 100%;  overflow: hidden;}
+body {   margin:0;  padding:0;	perspective: 1px;	transform-style: preserve-3d;  height: 100%;
+overflow-y: scroll;  overflow-x: hidden;  font-family: Nunito;}
+h1 {   font-size: 250%}
+p {  font-size: 140%;  line-height: 150%;  color: #333;}
+
+.slide {  position: relative;  padding: 25vh 10%;  min-height: 100vh;  width: 100vw;
+box-sizing: border-box;  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);	transform-style: inherit;}
+
+img {  position: absolute;  top: 50%;  left: 35%;  width: 320px;  height: 240px;
+transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+padding: 10px;  border-radius: 5px;  background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);}
+img:last-of-type {  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);}
+.slide:before {  content: "";  position: absolute;  top: 0;  bottom: 0;  left:0;  right:0;}
+.title {   width: 50%;  padding: 5%;  border-radius: 5px;  background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);}
+.slide:nth-child(2n)
+.title {  margin-left: 0;  margin-right: auto;}
+.slide:nth-child(2n+1)
+.title {  margin-left: auto;  margin-right: 0;}
+.slide, .slide:before {
+  background-size:    cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+.header { text-align: center;  font-size:300%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}
+
+
+
+
+@media screen and (min-width: 375px){ .header { text-align: center;  font-size: 100%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+@media screen and (min-width: 475px){ .header { text-align: center;  font-size: 150%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+@media screen and (min-width: 675px){ .header { text-align: center;  font-size: 175%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+@media screen and (min-width: 775px){ .header { text-align: center;  font-size: 200%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+@media screen and (min-width: 825px){ .header { text-align: center;  font-size: 250%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+@media screen and (min-width: 860px){ .header { text-align: center;  font-size: 300%;  color: #fff;  margin-top:0px; text-shadow: 0 2px 2px #000; letter-spacing: 10px;padding-top: 60px;}}
+
+
+
+#title {  background-image: url("https://c1.staticflickr.com/3/2917/32880971653_361f663795_b.jpg");
+background-attachment: fixed;  }
+#slide1 {  background-image: url("https://c1.staticflickr.com/3/2868/32880969923_4cbfa78dc9_b.jpg");
+transform: translateZ(-1px) scale(2);  z-index:-1;}
+#slide2.slide {  background-image: url("https://c1.staticflickr.com/3/2910/33564950221_caf1a9ee63_b.jpg");
+}
+
+
+#slide3 {  background-image: url("https://c1.staticflickr.com/3/2868/32880972353_faa46430fb_b.jpg");
+transform: translateZ(-1px) scale(2);  z-index:-1;}
+
+#slide4 { background-image: url("https://c1.staticflickr.com/3/2900/32851447794_55eae37580_b.jpg");}
+
+
+
+
+
+
+.module {
+  width: 300px;
+  height: 200px;
+
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
