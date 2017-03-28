@@ -56,7 +56,9 @@ transform: translateZ(-1px) scale(2);  z-index:-1;}
 #slide3 {  background-image: url("https://c1.staticflickr.com/3/2868/32880972353_faa46430fb_b.jpg");
 transform: translateZ(-1px) scale(2);  z-index:-1;}
 
-#slide4 { background-image: url("https://c1.staticflickr.com/3/2900/32851447794_55eae37580_b.jpg");}
+#slide4 { background-image: url("https://c1.staticflickr.com/3/2925/32880971123_a40d3243e9_b.jpg");
+
+}
 
 
 
